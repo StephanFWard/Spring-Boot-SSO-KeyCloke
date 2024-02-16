@@ -1,16 +1,61 @@
-<project>
-    <dependency>
-        <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-spring-boot-starter</artifactId>
-    </dependency>
-    <dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.example.springbootssocloak</groupId>
+    <artifactId>Spring-Boot-SSO-KeyCloke</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    
+    <name>Spring Boot SSO with KeyCloak</name>
+    <description>Spring Boot project with KeyCloak Single Sign-On (SSO) integration</description>
+    
+    <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
+        <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.4</version>
-    </dependency>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-security</artifactId>
-        <version>2.6.4</version>
-    </dependency>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    
+    <dependencies>
+        <!-- Spring Boot Starter Web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.6.4</version>
+        </dependency>
+        
+        <!-- Keycloak Spring Boot Starter -->
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-spring-boot-starter</artifactId>
+            <version>15.0.2</version> <!-- Updated to the appropriate version -->
+        </dependency>
+        
+        <!-- Spring Boot Starter Security -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>2.6.4</version>
+        </dependency>
+    </dependencies>
+    
+    <properties>
+        <java.version>21</java.version> <!-- Updated to Java 17 -->
+    </properties>
+    
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <mainClass>com.example.springbootssocloak.Application</mainClass> <!-- Adjust this to your main class -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+    
 </project>
