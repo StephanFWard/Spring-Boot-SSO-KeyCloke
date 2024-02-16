@@ -1,19 +1,19 @@
 # This project demonstrates a Spring Boot application with CRUD functionality for managing users stored in a SQL database, integrated with Keycloak for single sign-on (SSO) authentication.
 
 # Setup
-# 1. Create a new Spring Boot project with dependencies for Spring Web, Spring Data JPA, and Keycloak.
-# 2. Set up a MySQL database and configure the connection details in application.properties.
-# 3. Configure Keycloak settings in application.properties, including the Keycloak server URL, realm, client ID, etc.
-# 4. Implement the UserController to handle user profile retrieval using Keycloak authentication.
-# 5. Update the Spring Security configuration in SecurityConfig.java to integrate with Keycloak.
-# 6. Customize the application according to your requirements, such as adding additional endpoints or business logic.
+1. Create a new Spring Boot project with dependencies for Spring Web, Spring Data JPA, and Keycloak.
+2. Set up a MySQL database and configure the connection details in application.properties.
+3. Configure Keycloak settings in application.properties, including the Keycloak server URL, realm, client ID, etc.
+4. Implement the UserController to handle user profile retrieval using Keycloak authentication.
+5. Update the Spring Security configuration in SecurityConfig.java to integrate with Keycloak.
+6. Customize the application according to your requirements, such as adding additional endpoints or business logic.
 
 # Usage
-# 1. Start the Spring Boot application. It will automatically integrate with Keycloak for user authentication.
-# 2. Access the /users/profile endpoint to retrieve the user profile information after successful authentication.
-# 3. Implement additional functionality as needed, such as CRUD operations for managing users in the database.
-# Note
-# 1. Ensure that all sensitive information such as Keycloak credentials, database connection # details, and API keys are stored securely and not exposed in the source code or README files.
+1. Start the Spring Boot application. It will automatically integrate with Keycloak for user authentication.
+2. Access the /users/profile endpoint to retrieve the user profile information after successful authentication.
+3. Implement additional functionality as needed, such as CRUD operations for managing users in the database.
+Note
+1. Ensure that all sensitive information such as Keycloak credentials, database connection # details, and API keys are stored securely and not exposed in the source code or README files.
 
 SPRING-BOOT-SSO-KEYCLOAK/
 ├── backend/
