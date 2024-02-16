@@ -19,54 +19,51 @@
 Project Tree Shown Below
 
 SPRING-BOOT-SSO-KEYCLOAK/
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/
-│   │   │   │       └── example/
-│   │   │   │           └── controller/
-│   │   │   │               └── UserController.java
-│   │   │   │           └── config/
-│   │   │   │               └── SecurityConfig.java
-│   │   │   ├── resources/
-│   │   │   │   ├── static/
-│   │   │   │   │   ├── css/
-│   │   │   │   │   │   ├── main.css
-│   │   │   │   │   │   └── components/
-│   │   │   │   │   │       ├── header.css
-│   │   │   │   │   │       └── footer.css
-│   │   │   │   │   ├── js/
-│   │   │   │   │   └── img/
-│   │   │   │   ├── application.properties
-│   │   │   │   └── data.sql
-│   │   └── test/
-├── frontend/
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── components/
-│   │   │   │   ├── header/
-│   │   │   │   │   ├── header.component.html
-│   │   │   │   │   └── header.component.css
-│   │   │   │   ├── footer/
-│   │   │   │   │   ├── footer.component.html
-│   │   │   │   │   └── footer.component.css
-│   │   │   ├── shared/
-│   │   │   │   ├── styles/
-│   │   │   │   │   ├── main.css
-│   │   │   │   │   └── components/
-│   │   │   │   │       ├── header.css
-│   │   │   │   │       └── footer.css
-│   │   │   │   └── services/
-│   │   │   │       └── user.service.ts
-│   │   │   └── ...
-│   │   ├── assets/
-│   │   └── ...
-│   ├── angular.json
-│   ├── package.json
-│   └── ...
-├── pom.xml
-└── README.md
+C:.
+├───.vscode
+├───backend
+│   └───src
+│       ├───main
+│       │   ├───app
+│       │   │   ├───components
+│       │   │   │   ├───footer
+│       │   │   │   │   └───footer.component.html
+│       │   │   │   └───header
+│       │   │   ├───java
+│       │   │   │   └───com
+│       │   │   │       └───example
+│       │   │   │           └───springbootssocloak
+│       │   │   │               └───config
+│       │   │   └───shared
+│       │   │       ├───services
+│       │   │       │   └───user.service.ts
+│       │   │       └───styles
+│       │   │           ├───components
+│       │   │           │   └───header.css
+│       │   │           └───main.css
+│       │   ├───java
+│       │   │   └───com
+│       │   │       └───example
+│       │   │           └───controller
+│       │   └───resources
+│       │       └───static
+│       │           └───css
+│       │               └───components
+│       └───test
+├───frontend
+│   └───src
+│       └───app
+│           ├───assets
+│           └───components
+│               ├───header
+│               └───shared
+│                   ├───services
+│                   └───styles
+│                       └───components
+└───target
+    ├───classes
+    ├───maven-archiver
+    └───test-classes
 
 
 
