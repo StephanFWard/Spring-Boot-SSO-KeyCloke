@@ -1,0 +1,20 @@
+<!-- Header Component HTML -->
+
+<header>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <!-- Add more navigation links as needed -->
+      </ul>
+    </nav>
+    <div>
+      <!-- Display login/logout button based on user authentication status -->
+      <button *ngIf="!authenticated" (click)="login()">Login</button>
+      <button *ngIf="authenticated" (click)="logout()">Logout</button>
+      <!-- Display user profile information if authenticated -->
+      <div *ngIf="authenticated">
+        Welcome, {{ username }}!
+      </div>
+    </div>
+  </header>
