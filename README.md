@@ -66,13 +66,15 @@ C:.
     └───test-classes
 
 
+Clone the repository 
+
+git clone https://github.com/StephanFWard/Spring-Boot-SSO-KeyCloke.git
 
 To run the Java Angular app of the specified structure, you'll need to start both the backend (Spring Boot) and frontend (Angular) applications separately. Here's how you can do it:
 
 Running the Backend (Spring Boot) Application:
 Navigate to the backend directory of your project:
 
-bash
 cd SPRING-BOOT-SSO-KEYCLOAK/backend
 Make sure you have Maven installed and available in your system.
 
@@ -82,7 +84,7 @@ mvn clean install
 Once the build is successful, you can run the Spring Boot application:
 
 Note:
-Powershell Admin scripts to path in Maven like so to make it easier.
+Powershell Admin scripts to path in Maven like so to make it easier. To set env variables.
 
 $MavenHome = "$env:USERPROFILE\apache-maven-$MavenVersion"
 [System.Environment]::SetEnvironmentVariable("M2_HOME", $MavenHome, [System.EnvironmentVariableTarget]::Machine)
